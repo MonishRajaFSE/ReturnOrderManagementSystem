@@ -10,7 +10,7 @@ WORKDIR /src
 COPY ["ReturnOrderManagementSystemAPIGateway/ReturnOrderManagementSystemAPIGateway.csproj", "ReturnOrderManagementSystemAPIGateway/"]
 RUN dotnet restore "ReturnOrderManagementSystemAPIGateway/ReturnOrderManagementSystemAPIGateway.csproj"
 COPY . .
-WORKDIR "/src/ReturnOrderManagementSystemAPIGateway"
+WORKDIR "/src"
 RUN dotnet build "ReturnOrderManagementSystemAPIGateway.csproj" -c Release -o /app/build
 
 FROM build AS publish
