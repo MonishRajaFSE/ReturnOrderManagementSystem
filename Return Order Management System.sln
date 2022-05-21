@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32428.217
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComponentProcessingMicroservice", "ComponentProcessingMicroservice\ComponentProcessingMicroservice.csproj", "{5E3E8244-12CC-4960-8550-5832A2C124DF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PackagingAndDeliveryMicroservice", "PackagingAndDeliveryMicroservice\PackagingAndDeliveryMicroservice.csproj", "{4EADDD54-359C-4937-BE8F-32538F3B348E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReturnOrderManagementSystemAPIGateway", "ReturnOrderManagementSystemAPIGateway\ReturnOrderManagementSystemAPIGateway.csproj", "{0EAB6E8D-8B88-466E-A79D-15AE86D7A700}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E3E8244-12CC-4960-8550-5832A2C124DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E3E8244-12CC-4960-8550-5832A2C124DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E3E8244-12CC-4960-8550-5832A2C124DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E3E8244-12CC-4960-8550-5832A2C124DF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EADDD54-359C-4937-BE8F-32538F3B348E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EADDD54-359C-4937-BE8F-32538F3B348E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EADDD54-359C-4937-BE8F-32538F3B348E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EADDD54-359C-4937-BE8F-32538F3B348E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0EAB6E8D-8B88-466E-A79D-15AE86D7A700}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0EAB6E8D-8B88-466E-A79D-15AE86D7A700}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0EAB6E8D-8B88-466E-A79D-15AE86D7A700}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0EAB6E8D-8B88-466E-A79D-15AE86D7A700}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5696287F-CD93-4227-8100-9BB748CA6765}
+	EndGlobalSection
+EndGlobal
