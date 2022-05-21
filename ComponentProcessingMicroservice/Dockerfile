@@ -10,7 +10,7 @@ WORKDIR /src
 COPY ["ComponentProcessingMicroservice/ComponentProcessingMicroservice.csproj", "ComponentProcessingMicroservice/"]
 RUN dotnet restore "ComponentProcessingMicroservice/ComponentProcessingMicroservice.csproj"
 COPY . .
-WORKDIR "/src/ComponentProcessingMicroservice"
+WORKDIR "/src"
 RUN dotnet build "ComponentProcessingMicroservice.csproj" -c Release -o /app/build
 
 FROM build AS publish
