@@ -26,7 +26,6 @@ namespace ComponentProcessingMicroservice.Data
                 }
                 else
                 {
-
                     return true;
                 }
             }
