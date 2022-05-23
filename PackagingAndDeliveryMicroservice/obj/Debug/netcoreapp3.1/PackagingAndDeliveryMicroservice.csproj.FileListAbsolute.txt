@@ -39,3 +39,17 @@ C:\Users\841979\source\repos\Return Order Management System\PackagingAndDelivery
 C:\Users\841979\source\repos\Return Order Management System\PackagingAndDeliveryMicroservice\obj\Debug\netcoreapp3.1\PackagingAndDeliveryMicroservice.dll
 C:\Users\841979\source\repos\Return Order Management System\PackagingAndDeliveryMicroservice\obj\Debug\netcoreapp3.1\PackagingAndDeliveryMicroservice.pdb
 C:\Users\841979\source\repos\Return Order Management System\PackagingAndDeliveryMicroservice\obj\Debug\netcoreapp3.1\PackagingAndDeliveryMicroservice.genruntimeconfig.cache
+C:\Users\841979\source\repos\Return Order Management System\PackagingAndDeliveryMicroservice\bin\Debug\netcoreapp3.1\Microsoft.ApplicationInsights.dll
+C:\Users\841979\source\repos\Return Order Management System\PackagingAndDeliveryMicroservice\bin\Debug\netcoreapp3.1\Microsoft.ApplicationInsights.AspNetCore.dll
+C:\Users\841979\source\repos\Return Order Management System\PackagingAndDeliveryMicroservice\bin\Debug\netcoreapp3.1\Microsoft.AI.DependencyCollector.dll
+C:\Users\841979\source\repos\Return Order Management System\PackagingAndDeliveryMicroservice\bin\Debug\netcoreapp3.1\Microsoft.AI.EventCounterCollector.dll
+C:\Users\841979\source\repos\Return Order Management System\PackagingAndDeliveryMicroservice\bin\Debug\netcoreapp3.1\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\841979\source\repos\Return Order Management System\PackagingAndDeliveryMicroservice\bin\Debug\netcoreapp3.1\Microsoft.AI.WindowsServer.dll
+C:\Users\841979\source\repos\Return Order Management System\PackagingAndDeliveryMicroservice\bin\Debug\netcoreapp3.1\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\841979\source\repos\Return Order Management System\PackagingAndDeliveryMicroservice\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.ApplicationInsights.dll
+C:\Users\841979\source\repos\Return Order Management System\PackagingAndDeliveryMicroservice\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
+C:\Users\841979\source\repos\Return Order Management System\PackagingAndDeliveryMicroservice\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\841979\source\repos\Return Order Management System\PackagingAndDeliveryMicroservice\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+C:\Users\841979\source\repos\Return Order Management System\PackagingAndDeliveryMicroservice\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
+C:\Users\841979\source\repos\Return Order Management System\PackagingAndDeliveryMicroservice\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
+C:\Users\841979\source\repos\Return Order Management System\PackagingAndDeliveryMicroservice\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll

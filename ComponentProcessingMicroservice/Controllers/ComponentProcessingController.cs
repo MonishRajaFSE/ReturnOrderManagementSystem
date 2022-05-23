@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.Logging;
 using Microsoft.Net.Http.Headers;
 using System;
 using System.Collections.Generic;
@@ -18,11 +19,12 @@ namespace ComponentProcessingMicroservice.Controllers
     [Authorize]
     public class ComponentProcessingController : ControllerBase
     {
-
+        private readonly ILogger<ComponentProcessingController> _logger;
         private readonly IConfiguration _configuration;
         private ComponentProcessingServices _componentProcessingServices;
-        public ComponentProcessingController(IConfiguration configuration,Func<ServiceEnum, IComponentProcessing> serviceResolver)
+        public ComponentProcessingController(ILogger<ComponentProcessingController> logger,IConfiguration configuration,Func<ServiceEnum, IComponentProcessing> serviceResolver)
         {
+            _logger = logger;
             _configuration = configuration;
             _componentProcessingServices = new ComponentProcessingServices(serviceResolver);
         }
@@ -31,12 +33,13 @@ namespace ComponentProcessingMicroservice.Controllers
         {
             try
             {
+                _logger.LogInformation("ProcessDetail - Calculation");
                 ProcessResponseModel response = _componentProcessingServices.Calculate(new ProcessRequestModel(Name, ContactNumber, ComponentType, ComponentName, Quantity), Request);
                 return response;
             }
             catch (Exception ex)
             {
-
+                _logger.LogError($"Error - {ex}");
                 throw ex;
             }
         }
@@ -45,9 +48,13 @@ namespace ComponentProcessingMicroservice.Controllers
         {
             try
             {
+                _logger.LogInformation("CompleteProcessing - Saving Process details to DB");
                 return _componentProcessingServices.CompleteProcessing(request);
             }
-            catch (Exception ex) { throw ex; }
+            catch (Exception ex) {
+                _logger.LogError($"Error - {ex}");
+                throw ex;
+            }
         }
     }
 }

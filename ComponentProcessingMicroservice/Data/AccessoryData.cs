@@ -15,7 +15,7 @@ namespace ComponentProcessingMicroservice.Data
             {
                 var servicingModel = new ServicingModel();
                 servicingModel.ProcessingCharge = Quantity * 300;
-                servicingModel.DateOfDelivery = DateTime.Now.AddDays(2);
+                servicingModel.DateOfDelivery = DateTime.Now.AddDays(2).Date;
                 return servicingModel;
             }
             catch (Exception ex)

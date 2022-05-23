@@ -7,10 +7,14 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
 WORKDIR /src
+#server
+#COPY *.csproj ./
+#RUN dotnet restore
+#Local
 COPY ["ReturnOrderManagementSystemAPIGateway/ReturnOrderManagementSystemAPIGateway.csproj", "ReturnOrderManagementSystemAPIGateway/"]
 RUN dotnet restore "ReturnOrderManagementSystemAPIGateway/ReturnOrderManagementSystemAPIGateway.csproj"
 COPY . .
-WORKDIR "/src"
+WORKDIR "/src/ReturnOrderManagementSystemAPIGateway"
 RUN dotnet build "ReturnOrderManagementSystemAPIGateway.csproj" -c Release -o /app/build
 
 FROM build AS publish

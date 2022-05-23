@@ -34,6 +34,7 @@ namespace ComponentProcessingMicroservice
             services.AddCors();
             services.AddControllers();
             services.AddHttpContextAccessor();
+
             services.AddScoped<IAuthentication, AuthenticationData>();
             services.AddTransient<IntegralData>();
             services.AddTransient<AccessoryData>();
@@ -81,6 +82,7 @@ namespace ComponentProcessingMicroservice
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["JWT:Secret"]))
                 };
             });
+            services.AddApplicationInsightsTelemetry();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

@@ -79,3 +79,14 @@ C:\Users\841979\source\repos\Return Order Management System\ComponentProcessingM
 C:\Users\841979\source\repos\Return Order Management System\ComponentProcessingMicroservice\obj\Debug\netcoreapp3.1\ComponentProcessingMicroservice.pdb
 C:\Users\841979\source\repos\Return Order Management System\ComponentProcessingMicroservice\obj\Debug\netcoreapp3.1\ComponentProcessingMicroservice.genruntimeconfig.cache
 C:\Users\841979\source\repos\Return Order Management System\ComponentProcessingMicroservice\obj\Debug\netcoreapp3.1\ComponentProcessingMicroservice.csproj.AssemblyReference.cache
+C:\Users\841979\source\repos\Return Order Management System\ComponentProcessingMicroservice\bin\Debug\netcoreapp3.1\Microsoft.ApplicationInsights.dll
+C:\Users\841979\source\repos\Return Order Management System\ComponentProcessingMicroservice\bin\Debug\netcoreapp3.1\Microsoft.ApplicationInsights.AspNetCore.dll
+C:\Users\841979\source\repos\Return Order Management System\ComponentProcessingMicroservice\bin\Debug\netcoreapp3.1\Microsoft.AI.DependencyCollector.dll
+C:\Users\841979\source\repos\Return Order Management System\ComponentProcessingMicroservice\bin\Debug\netcoreapp3.1\Microsoft.AI.EventCounterCollector.dll
+C:\Users\841979\source\repos\Return Order Management System\ComponentProcessingMicroservice\bin\Debug\netcoreapp3.1\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\841979\source\repos\Return Order Management System\ComponentProcessingMicroservice\bin\Debug\netcoreapp3.1\Microsoft.AI.WindowsServer.dll
+C:\Users\841979\source\repos\Return Order Management System\ComponentProcessingMicroservice\bin\Debug\netcoreapp3.1\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\841979\source\repos\Return Order Management System\ComponentProcessingMicroservice\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.ApplicationInsights.dll
+C:\Users\841979\source\repos\Return Order Management System\ComponentProcessingMicroservice\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
+C:\Users\841979\source\repos\Return Order Management System\ComponentProcessingMicroservice\bin\Debug\netcoreapp3.1\System.Diagnostics.PerformanceCounter.dll
+C:\Users\841979\source\repos\Return Order Management System\ComponentProcessingMicroservice\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Diagnostics.PerformanceCounter.dll
