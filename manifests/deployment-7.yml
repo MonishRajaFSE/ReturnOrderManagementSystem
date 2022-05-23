@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "returnordermanagementsystem-1ab6"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "returnordermanagementsystem-1ab6"
+  template:
+    metadata:
+      labels:
+        app: "returnordermanagementsystem-1ab6"
+    spec:
+      containers:
+        - name: "returnordermanagementsystem-1ab6"
+          image: "returnordermanagementsystemcr.azurecr.io/returnordermanagementsystem"
+          ports:
+          - containerPort: 80
