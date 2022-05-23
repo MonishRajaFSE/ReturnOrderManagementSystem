@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: "returnordermanagementsystem-1ab6"
+    labels:
+        app: "returnordermanagementsystem-1ab6"
+spec:
+    type: ClusterIP
+    ports:
+    - port: 80
+      targetPort: 80
+      protocol: TCP
+      name: http
+    selector:
+        app: "returnordermanagementsystem-1ab6"
