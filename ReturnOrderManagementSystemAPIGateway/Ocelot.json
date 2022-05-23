@@ -47,11 +47,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/Authentication/login",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 44392
+          "Host": "20.237.41.20",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/apigateway/login",
