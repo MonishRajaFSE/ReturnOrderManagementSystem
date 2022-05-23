@@ -1,0 +1,50 @@
+on: [push]
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    
+    - uses: azure/docker-login@v1
+      with:
+        login-server: componentprocessingmicroservice.azurecr.io
+        username: ${{ secrets.acr_componentprocessingmicroservice_username }}
+        password: ${{ secrets.acr_componentprocessingmicroservice_password }}
+    
+    - name: Build and push image to ACR
+      id: build-image
+      run: |
+        docker build "$GITHUB_WORKSPACE/ComponentProcessingMicroservice" -f  "ComponentProcessingMicroservice/Dockerfile" -t componentprocessingmicroservice.azurecr.io/returnordermanagementsystem:${{ github.sha }} --label dockerfile-path=ComponentProcessingMicroservice/Dockerfile
+        docker push componentprocessingmicroservice.azurecr.io/returnordermanagementsystem:${{ github.sha }}
+    
+    - uses: azure/k8s-set-context@v1
+      with:
+         kubeconfig: ${{ secrets.aks_returnordermanagementsystem_kubeConfig }}
+      id: login
+    
+    - name: Create namespace
+      run: |
+        namespacePresent=`kubectl get namespace | grep componentprocessingmicroservice | wc -l`
+        if [ $namespacePresent -eq 0 ]
+        then
+            echo `kubectl create namespace componentprocessingmicroservice`
+        fi
+
+    - uses: azure/k8s-create-secret@v1
+      with:
+        namespace: componentprocessingmicroservice
+        container-registry-url: componentprocessingmicroservice.azurecr.io
+        container-registry-username: ${{ secrets.acr_componentprocessingmicroservice_username }}
+        container-registry-password: ${{ secrets.acr_componentprocessingmicroservice_password }}
+        secret-name: returnordermdockerauth
+       
+    - uses: azure/k8s-deploy@v1.2
+      with:
+        namespace: componentprocessingmicroservice
+        manifests: |
+          manifests/deployment-3.yml
+          manifests/service-3.yml
+        images: |
+          componentprocessingmicroservice.azurecr.io/returnordermanagementsystem:${{ github.sha }}
+        imagepullsecrets: |
+          returnordermdockerauth
