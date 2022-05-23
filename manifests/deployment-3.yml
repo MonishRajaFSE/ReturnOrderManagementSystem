@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "returnordermanagementsystem-3d77"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "returnordermanagementsystem-3d77"
+  template:
+    metadata:
+      labels:
+        app: "returnordermanagementsystem-3d77"
+    spec:
+      containers:
+        - name: "returnordermanagementsystem-3d77"
+          image: "componentprocessingmicroservice.azurecr.io/returnordermanagementsystem"
+          ports:
+          - containerPort: 80
