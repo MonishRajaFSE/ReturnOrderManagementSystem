@@ -55,7 +55,7 @@ namespace ComponentProcessingMicroservice.Services
                 string res = "";
                 using (var client = new HttpClient())
                 {
-                    client.BaseAddress = new Uri("https://localhost:44372/api/PackagingAndDelivery/");
+                    client.BaseAddress = new Uri("http://20.232.51.195/api/PackagingAndDelivery/");
                     client.DefaultRequestHeaders.Accept.Clear();
                     client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
                     client.DefaultRequestHeaders.Add("Authorization", token);
