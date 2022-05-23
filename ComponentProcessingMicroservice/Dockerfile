@@ -8,11 +8,11 @@ EXPOSE 443
 FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build
 WORKDIR /src
 #server
-#COPY *.csproj ./
-#RUN dotnet restore
+COPY *.csproj ./
+RUN dotnet restore
 #local
-COPY ["ComponentProcessingMicroservice/ComponentProcessingMicroservice.csproj", "ComponentProcessingMicroservice/"]
-RUN dotnet restore "ComponentProcessingMicroservice/ComponentProcessingMicroservice.csproj"
+#COPY ["ComponentProcessingMicroservice/ComponentProcessingMicroservice.csproj", "ComponentProcessingMicroservice/"]
+#RUN dotnet restore "ComponentProcessingMicroservice/ComponentProcessingMicroservice.csproj"
 COPY . .
 WORKDIR "/src/ComponentProcessingMicroservice"
 RUN dotnet build "ComponentProcessingMicroservice.csproj" -c Release -o /app/build
