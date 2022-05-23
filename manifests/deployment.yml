@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "returnordermanagementsystem-d2fd"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "returnordermanagementsystem-d2fd"
+  template:
+    metadata:
+      labels:
+        app: "returnordermanagementsystem-d2fd"
+    spec:
+      containers:
+        - name: "returnordermanagementsystem-d2fd"
+          image: "componentcr.azurecr.io/returnordermanagementsystem"
+          ports:
+          - containerPort: 80
