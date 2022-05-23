@@ -1,0 +1,17 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+    name: "returnordermanagementsystem-d2fd"
+    labels:
+        app: "returnordermanagementsystem-d2fd"
+    annotations:
+        kubernetes.io/ingress.class: addon-http-application-routing
+spec:
+    rules:
+        - host: finalcomponentprocessing-returnordermanagementsystem-d2fd.65204e0f7a474adeb76c.eastus.aksapp.io
+          http:
+            paths:
+            - path: /
+              backend:
+                serviceName: "returnordermanagementsystem-d2fd"
+                servicePort: 80
