@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: "returnordermanagementsystem-ff73"
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: "returnordermanagementsystem-ff73"
+  template:
+    metadata:
+      labels:
+        app: "returnordermanagementsystem-ff73"
+    spec:
+      containers:
+        - name: "returnordermanagementsystem-ff73"
+          image: "packaginganddeliverymicroservice.azurecr.io/returnordermanagementsystem"
+          ports:
+          - containerPort: 80
