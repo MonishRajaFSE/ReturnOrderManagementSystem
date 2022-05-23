@@ -2,11 +2,11 @@
   "Routes": [
     {
       "DownstreamPathTemplate": "/api/ComponentProcessing",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 44392
+          "Host": "20.232.48.145",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/apigateway/ComponentProcessingService",
@@ -14,11 +14,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/ComponentProcessing/ProcessDetail",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 44392
+          "Host": "20.232.48.145",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/apigateway/ComponentProcessingService/ProcessDetail",
@@ -31,11 +31,11 @@
 
     {
       "DownstreamPathTemplate": "/api/ComponentProcessing/CompleteProcessing",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 44392
+          "Host": "20.232.48.145",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/apigateway/ComponentProcessingService/CompleteProcessing",
@@ -59,11 +59,11 @@
     },
     {
       "DownstreamPathTemplate": "/api/PackagingAndDelivery/GetPackagingDeliveryCharge",
-      "DownstreamScheme": "https",
+      "DownstreamScheme": "http",
       "DownstreamHostAndPorts": [
         {
-          "Host": "localhost",
-          "Port": 44372
+          "Host": "20.232.51.195",
+          "Port": 80
         }
       ],
       "UpstreamPathTemplate": "/apigateway/GetPackagingDeliveryCharge",
