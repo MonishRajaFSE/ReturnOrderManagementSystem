@@ -7034,11 +7034,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\841979\\source\\repos\\Return Order Management System\\ComponentProcessingMicroservice\\ComponentProcessingMicroservice.csproj",
+      "projectUniqueName": "C:\\ReturnOrderManagementSystem_Repo(Outlook)\\ComponentProcessingMicroservice\\ComponentProcessingMicroservice.csproj",
       "projectName": "ComponentProcessingMicroservice",
-      "projectPath": "C:\\Users\\841979\\source\\repos\\Return Order Management System\\ComponentProcessingMicroservice\\ComponentProcessingMicroservice.csproj",
+      "projectPath": "C:\\ReturnOrderManagementSystem_Repo(Outlook)\\ComponentProcessingMicroservice\\ComponentProcessingMicroservice.csproj",
       "packagesPath": "C:\\Users\\841979\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\841979\\source\\repos\\Return Order Management System\\ComponentProcessingMicroservice\\obj\\",
+      "outputPath": "C:\\ReturnOrderManagementSystem_Repo(Outlook)\\ComponentProcessingMicroservice\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\841979\\AppData\\Roaming\\NuGet\\NuGet.Config",
